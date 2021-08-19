@@ -40,6 +40,7 @@ h3{
     top:0;
     z-index:10;
     flex-wrap:wrap;
+    overflow-x: hidden;
 }
 .left-header{
     width:20%;
@@ -99,7 +100,6 @@ h3{
 }
 /*Main Content part*/
 .main-content-part{
-   
     height:100vh;
     background-color:rgba(253, 241, 232, 0.68);
     object-fit:contain;
@@ -147,10 +147,72 @@ h3{
 .images img{
     width:100%;
 }
-.card button{
+.card .btn{
     border-radius:4px;
     background-color: rgba(255,255,255,1);
-    border:1px solid rgba(252, 170, 74, 1);
+    border:2px solid rgba(252, 170, 74, 1);
     font-weight:500;
     cursor:pointer;
+    transition: all 0.2s linear 0s;
+}
+.card .btn:hover{
+background-color:rgba(252, 170, 74, 0.4);
+}
+.btn-muted{
+    border-radius:4px;
+    background-color: rgba(255,255,255,1);
+    border:1px solid rgb(68, 68, 68);
+}
+@media screen and (max-width:480px) and (min-width:300px){
+    /*Header Mobile View Css*/
+    header{
+        width:100vw;
+        display:flex;
+        
+    }
+    .left-header{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .left-header a+img{
+        padding: 0px 5px;
+    }
+    .right-header{
+        width:100%;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
+    }
+    .right-header div:last-child div{
+        padding: 0px 3px;
+    }
+    /*Side bar mobile View css*/
+    .sidebar{
+        width:80%;
+        height:50vh;
+        position:relative;
+        display:none;
+    }
+    .sidebar-view-mobile{
+        width:80%;
+        height:50vh;
+        position:relative;
+    }
+    /*Main content mobile css*/
+    .main-content-part{
+        width:100%;
+    }
+    .main-content-part div:first-child{
+        flex-direction:column;
+        margin:5px 0px;
+    }
+    .main-content-part .row{
+        flex-direction:column;
+        justify-content: center;
+    }
+    .main-content-part .row .card{
+        margin: 10px 20px;
+    }
 }
