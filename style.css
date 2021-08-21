@@ -8,6 +8,7 @@ body{
     width:100%;
     height:auto;
     background:rgba(253, 241, 232, 0.68);
+    overflow-x:hidden;
 }
 a{
     text-decoration:none;
@@ -35,12 +36,11 @@ h3{
 .header{
     height:auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.57);
-    display:flex;
     position:sticky;
     top:0;
     z-index:10;
-    flex-wrap:wrap;
-    overflow-x: hidden;
+    /*flex-wrap:wrap;
+    overflow-x:hidden;*/
 }
 .left-header{
     width:20%;
@@ -90,13 +90,17 @@ h3{
     flex-direction:row;
     
 }
+/*Middle section*/
+.middle-section{
+    width:100%;
+}
 /*Side Bar*/
 .sidebar{
     width:20%;
     height:100vh;
     background-color:rgba(247, 246, 243, 1);
-    position:fixed;
-    top:0;
+   /* position:fixed;
+    top:0;*/
 }
 /*Main Content part*/
 .main-content-part{
@@ -104,29 +108,27 @@ h3{
     background-color:rgba(253, 241, 232, 0.68);
     object-fit:contain;
 }
-.main-content-part div:first-child{
+.main-content-part .main-heading-content{
     display:flex;
-    
 }
 .main-content-part div:first-child p{
     font-size:13px;
     font-weight:500;
 }
 .card{
-    width:300px;
     height:369px;
     background:rgba(255, 255, 255, 1);
     border-radius:0px;
     border: 1px solid rgba(0, 0, 0, 1);
     cursor:pointer;
+    flex-wrap:wrap;
+    object-fit:contain;
     transition: all 0.2s linear 0s;
 }
 .card:hover{
     transform: translate(4px,-4px);
-    box-shadow: -5px 5px  0px 0px rgba(0, 0, 0, 1);
-}
-.main-content-part .row{
-    justify-content: flex-end;
+     box-shadow: -5px 5px  0px 0px rgba(0, 0, 0, 1);
+     /*box-shadow: -5px 5px  10px 0px rgba(0, 0, 0, 0.2);*/
 }
 .icons{
     width:16px;
@@ -163,12 +165,11 @@ background-color:rgba(252, 170, 74, 0.4);
     background-color: rgba(255,255,255,1);
     border:1px solid rgb(68, 68, 68);
 }
-@media screen and (max-width:480px) and (min-width:300px){
+@media screen and (max-width:900px) and (min-width:300px){
     /*Header Mobile View Css*/
     header{
         width:100vw;
-        display:flex;
-        
+        display:flex;  
     }
     .left-header{
         width:100%;
@@ -204,15 +205,8 @@ background-color:rgba(252, 170, 74, 0.4);
     .main-content-part{
         width:100%;
     }
-    .main-content-part div:first-child{
+    .main-content-part .main-heading-content{
         flex-direction:column;
         margin:5px 0px;
-    }
-    .main-content-part .row{
-        flex-direction:column;
-        justify-content: center;
-    }
-    .main-content-part .row .card{
-        margin: 10px 20px;
     }
 }

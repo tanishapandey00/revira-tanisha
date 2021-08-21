@@ -22,11 +22,14 @@
     <!-----------------------------Navbar---------------------------------->
     <header>
         <div class="header">
-            <div class="left-header px-1 py-2 ">
-                <a href=""><i class="fas fa-angle-left mx-2 "></i></a>
+            <div class="row">
+            <div class="left-header col-lg-3 col-md-5">
+                <div class="px-1 py-2">
+                <a href=""><i class="fas fa-angle-left mx-2 sidebar-view"></i></a>
                 <img src="./images/wordmark.png" alt="">
             </div>
-            <div class="right-header px-1 py-1 ">
+            </div>
+            <div class="right-header col-lg-9 col-md-5 px-1 py-1 ">
                 <div class="my-2 ml-2 pt-2">
                     <h2>Projects</h2>
                 </div>
@@ -48,58 +51,65 @@
                     </div>
                 </div>
             </div>
-    
+        </div>
         </div>
     </header>
-         <!--------------------------------Sidebar----------------------------------->
-            <div class="sidebar  px-2 py-2">
+    <div class="middle-section">
+        <div class="row justify-content-center">
+            <!--------------------------------Sidebar----------------------------------->
+            <div class=" col-lg-3 col-md-5 sidebar  px-0 py-2">
 
             </div>
             <!--------------------------------Main-content-part----------------------------------->
-            <div class="main-content-part px-2 py-2">
-                <div class="my-3  text-center text-capatilaze justify-content-center">
-                    <p class="ml-5">Project ID: 13jajg</p><p class="ml-3">Use Case: Demand Forecasting</p>
+            <div class="col-lg-9 col-md-7 main-content-part py-3">
+              <div class="my-4  text-center text-capatilaze justify-content-center main-heading-content">
+                    <p class=" ">Project ID: 13jajg</p>
+                    <p class="ml-lg-3 ml-sm-1">Use Case: Demand Forecasting</p>
                 </div>
-               <div class="row mt-5 mr-2">
-                   <div class="col-lg-3 col-md-3 col-5">
-                       <div class="card ">
-                           <h3 class="text-left ml-3 mt-3">STEP 1</h3>
-                           <a href=""><img src="./images/database-solid.svg" alt="" class="icons ml-3 my-1">
-                           <p class="text-left ml-2 my-1">Set-up Data Pipelines</p></a>
-                           <div class="images m-auto">
-                               <img src="./images/step1.svg" alt="">
-                           </div>
-                           <a href=""><button class="mx-auto px-5 mb-3 py-1 btn">Create Dataset</button></a>
-                           <a href="" class="mx-auto mb-2">Use Sample datasets</a>
-                       </div>
-                   </div>
-                   <div class="col-lg-3 col-md-3 col-5">
-                       <div class="card ">
-                        <h3 class="text-left ml-3 mt-3">STEP 2</h3>
-                        <a href=""><img src="./images/train-model-icon.png" alt="" class="icons ml-3 my-1">
-                        <p class="text-left ml-2 my-1">Train Models</p></a>
-                        <div class="images m-auto">
-                            <img src="./images/step2.svg" alt="">
+                <div class="row mt-4 justify-content-center">
+                    <div class="col-lg-3 col-md-5 col-10 mx-2 my-3">
+                        <div class="card px-2">
+                            <h3 class="text-left ml-3 mt-3">STEP 1</h3>
+                            <a href=""><img src="./images/database-solid.svg" alt="" class="icons ml-3 my-1">
+                                <p class="text-left ml-2 my-1">Set-up Data Pipelines</p>
+                            </a>
+                            <div class="images m-auto">
+                                <img src="./images/step1.svg" alt="">
+                            </div>
+                            <a href=""><button class="mx-auto px-5 px-md-4 mb-3 py-1 btn">Create Dataset</button></a>
+                            <a href="" class="mx-auto mb-2">Use Sample datasets</a>
                         </div>
-                        <a href="page1c.html"><button class="mx-auto px-5 mb-5 py-1 btn">Train Models</button></a>
-                       </div>
-                   </div>
-                   <div class="col-lg-3 col-md-3 col-5">
-                       <div class="card  ">
-                        <h3 class="text-left ml-3 mt-3">STEP 3</h3>
-                        <a href=""><img src="./images/deployment-icon.png" alt="" class="icons ml-3 my-1">
-                        <p class="text-left ml-2 my-1">Manage Deployments</p></a>
-                        <div class="images m-auto">
-                            <img src="./images/step3.svg" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-10 mx-2 my-3">
+                        <div class="card px-2">
+                            <h3 class="text-left ml-3 mt-3">STEP 2</h3>
+                            <a href=""><img src="./images/train-model-icon.png" alt="" class="icons ml-3 my-1">
+                                <p class="text-left ml-2 my-1">Train Models</p>
+                            </a>
+                            <div class="images m-auto">
+                                <img src="./images/step2.svg" alt="">
+                            </div>
+                            <a href="page1c.html"><button class="mx-auto px-5 mb-5 py-1 btn">Train Models</button></a>
                         </div>
-                        <button class="mx-auto px-5 mb-5 py-1 btn-muted">Start Deployment</button>
-                        
-                       </div>
-                   </div>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-10 mx-2 my-3">
+                        <div class="card px-2">
+                            <h3 class="text-left ml-3 mt-3">STEP 3</h3>
+                            <a href=""><img src="./images/deployment-icon.png" alt="" class="icons ml-3 my-1">
+                                <p class="text-left ml-2 my-1">Manage Deployments</p>
+                            </a>
+                            <div class="images m-auto">
+                                <img src="./images/step3.svg" alt="">
+                            </div>
+                            <a href=""><button class="mx-auto px-4 mb-5 py-1 btn-muted">Start Deployment</button></a>
 
-               </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            
+        </div>
+    </div>
     <script src="./script.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
