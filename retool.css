@@ -10,7 +10,7 @@ body{
     width:100%;
     height:auto;
     font-family: 'Roboto', sans-serif;
-    background: url(./images/image3.png) no-repeat center top;
+    /*background: url(./images/image3.png) no-repeat center top;*/
     background-size:100% 100%;
 }
 
@@ -18,7 +18,7 @@ body{
     height:auto;
     background-color:rgba(255, 255, 255, 1);
     border-radius:10px;
-    box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.20);
+    /*box-shadow: 0px 0px 6px 5px rgba(0, 0, 0, 0.20);*/
     margin: 100px auto;
     padding:0;
 }
@@ -93,15 +93,13 @@ width:10px;
     height:550px; 
     overflow-y: scroll;
 }
-
-
 #middle-right h3{
     font-size:13px;
     color:rgba(146, 146, 146, 1);
     font-weight:500;
 }
 #middle-right p{
-    font-size:12px;
+    font-size:11px;
     color:rgba(107, 107, 107, 1);
     font-weight:500;
     margin:auto 0px;
@@ -113,17 +111,16 @@ width:10px;
     align-items: center;
     border: 0.4px solid rgba(180, 180, 180, 1);
     transition:all 0.2s linear 0s;
+    justify-content: space-evenly;
+
 }
 #middle-right .card:hover{
   border-color:rgba(2, 121, 188, 1);
   background-color:rgba(52, 154, 249, 0.45);
 }
-#middle-right .row{
-    grid-gap:3px;
-}
+
 img{
     width:21px;
-    
 }
 #bottom{
     height:50px !important;
@@ -182,4 +179,9 @@ button{
     border-radius:3px;
     background-color:rgba(181, 181, 181, 1);
     border: 0px solid transparent;
+}
+@media screen and (max-width:900px) and (min-width:300px){
+    #middle-right .card p{
+        
+    }
 }
