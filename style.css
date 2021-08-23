@@ -118,7 +118,7 @@ h3{
 .card{
     height:369px;
     background:rgba(255, 255, 255, 1);
-    border-radius:0px;
+    border-radius:4px;
     border: 1px solid rgba(0, 0, 0, 1);
     cursor:pointer;
     flex-wrap:wrap;
@@ -144,7 +144,8 @@ h3{
     font-size:15px;
 }
 .images{
-    width:180px;
+    width:160px;
+    object-fit:contain;
 }
 .images img{
     width:100%;
@@ -208,5 +209,8 @@ background-color:rgba(252, 170, 74, 0.4);
     .main-content-part .main-heading-content{
         flex-direction:column;
         margin:5px 0px;
+    }
+    .card a{
+        font-size:12px;
     }
 }
