@@ -52,6 +52,12 @@ a:hover{
     justify-content: space-between;
     border-right: 0.6px solid rgba(136, 136, 136, 0.5);
 }
+#middle-left h4{
+    font-size:17px; 
+}
+#middle-left p{
+    font-size:12px; 
+}
 #middle-left-2{
     height:600px;
     display:flex;
