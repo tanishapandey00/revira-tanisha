@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>data_api</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Bootstrap files -->
+    <link rel="stylesheet" href="./bootCSS/bootstrap.min.css" text="text/css">
+    <!--Bootstrap files css cdn links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--Css file coustom-->
+    <link rel="stylesheet" href="./retool.css" text="text/css">
+    <link rel="stylesheet" href="./data.css" text="text/css">
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="showcase">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-7 col-md-7 col-7 box-data">
+                        <div class="row">
+                            <div id="top" class="col-lg-12 ml-4">
+                                <h4 class="ml-1 my-3">REST API</h4>
+                                <div class="mr-2">
+                                    <!----------------------Current data Images---------------------------->
+                                    <img src="./images/REST APi.svg" alt="" class=" mr-3">
+                                    <!----------------------Side Dropdown---------------------------->
+                                    <div class="dropdown drop-icon">
+                                        <a href="#" data-toggle="dropdown"><i class="fas fa-chevron-down"></i></a>
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li class="dropdown-header pl-2">Frequently used</li>
+                                            <li><a href="#" class="dropdown-item  mb-2">
+                                                    <img src="./images/facebook.png" class="float-left">
+                                                    <p class="ml-4 my-auto">Facebook</p>
+                                                </a>
+                                            </li>
+                                            <li><a href="#" class="dropdown-item mb-2">
+                                                    <img src="./images/Twitter.png" class=" float-left">
+                                                    <p class="ml-4 my-auto">Twitter</p>
+                                                </a>
+                                            </li>
+                                            <li><a href="#" class="dropdown-item  mb-2">
+                                                    <img src="./images/Reddit.png" class=" float-left">
+                                                    <p class="ml-4 my-auto">Reddit</p>
+                                                </a>
+                                            </li>
+                                            <li><a href="data_api.html" class="dropdown-item active mb-2">
+                                                    <img src="./images/REST APi.svg" class=" float-left">
+                                                    <p class="ml-4 my-auto">Rest API</p>
+                                                </a>
+                                            </li>
+                                            <li><a href="data_sql.html" class="dropdown-item  mb-2">
+                                                    <img src="./images/MySQL Logo.wine.svg" class=" float-left">
+                                                    <p class="ml-4 my-auto">MySQL</p>
+                                                </a></li>
+                                            <li><a href="#" class="dropdown-item  mb-2">
+                                                    <img src="./images/mongodb icon.svg" class=" float-left">
+                                                    <p class="ml-4 my-auto">MongoDB</p>
+                                                </a></li>
+                                            <li class="dropdown-header pl-2"><a href=""></a>Show All</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!----------------------Middle part---------------------------->
+                            <div id="middle" class="py-3 px-5 col-lg-12 ml-4">
+                                <form action="" class="form-horizontal p-0">
+                                    <div class="option-api form-group m-0 ">
+                                        <div class="get-drop px-3 py-2 m-0 ">
+                                            GET <span><i class="fas fa-chevron-down ml-2 pl-3"></i></span>
+                                        </div>
+                                        <label for="URL_API" class="sr-only control-label">Enter request URL</label>
+                                        <input type="text" id="URL_API" placeholder="Enter request URL" class="form-control m-0 ">
+                                    </div>
+                                </form>
+                                <div class="list-unstyled list-inline mt-3">
+                                <a href="#" class="mx-2">Params</a>
+                                <a href="#" class="mx-4">Authorization</a>
+                                <a href="#" class="mx-4">Headers</a>
+                                <a href="#" class="mx-4">Body</a>
+                                <a href="#" class="mx-4">Settings</a>
+                                </div>
+                                <div class="list-content">
+                                   <h6 class="text-left text-capatilize mt-4">Query Params</h6>
+                                   <table class="table ">
+                                    <thead>
+                                      <tr>
+                                        <th class="table-border-right">Key</th>
+                                        <th class="table-border-right">Value</th>
+                                        <th>Description</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="table-border-right">Mary</td>
+                                        <td class="table-border-right">Mary </td>
+                                        <td></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table-border-right">Mary</td>
+                                        <td class="table-border-right">Moe</td>
+                                        <td>mary@example.com</td>
+                                      </tr>
+                                      
+                                    </tbody>
+                                  </table>
+                                </div>
+                            </div>
+                            <!----------------------bottom---------------------------->
+                            <div id="data-bottom" class="pt-3 pb-5 pr-5 col-lg-12 ml-4 ">
+                                <form action="" class="mr-5">
+                                    <div class="form-group">
+                                        <label for="API_Name" > API Name  : </label>
+                                        <input type="text" id="API_Name" placeholder="" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="API_Des" > API Description : </label>
+                                        <input type="text" id="API_Des" placeholder="" class="form-control">
+                                    </div>
+                                </form>
+                            </div>
+                            <!----------------------bottom with buttons---------------------------->
+                            <div id="data-bottom-buttons" class="px-4 py-3 col-lg-12 ml-4">
+                               <div class="my-1 pb-1">
+                                   <button type="button" href="" class="btn btn-default btn-cancle ">Cancel</button>
+                                   <button type="submit" class="btn btn-primary ml-2 ">Done</button>
+                               </div> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Bootstrap files javascript cdn links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Bootstrap files javascript filelinks -->
+    <script src="./bootJS/bootstrap.min.js" text="script/js"></script>
+    <script src="./bootJS/bootstrap.bundle.min.js" text="script/js"></script>
+</body>
+
+</html>
