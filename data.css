@@ -165,3 +165,18 @@ justify-content: flex-end;
 .current_active{
     background-color:rgba(23,110,255,0.23);
 }
+@media screen and (max-width:900px) and (min-width:300px){
+    #data-bottom label{
+        font-size:14px;
+        font-weight:500;
+        color:rgba(83,83,83,0.89);
+    }
+    #data-bottom .form-group{
+    flex-direction: column;
+    }
+    #data-bottom-left{
+        border-right:none;
+        border-bottom:0.6px solid rgba(136, 136, 136, 0.25);
+        padding:0;
+    }
+}
