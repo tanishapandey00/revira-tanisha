@@ -85,7 +85,7 @@ color:rgba(65,64,64,1);
     color:rgba(65,64,64,1);
 }
 #middle .table  tr{
-   width:33%;
+   width:auto;
 }
 #middle .table{
     border-bottom:1px solid rgba(112,112,112,0.17);
@@ -133,7 +133,7 @@ justify-content: flex-end;
     width:15px;
 }
 #data-bottom-left ul li a{
-    font-size:13px;
+    font-size:14px;
     color:rgba(100,100,100,1);
 }
 #data-bottom-left ul li{
@@ -147,16 +147,16 @@ justify-content: flex-end;
     color:rgba(177,177,177,1);
 }
 #data-bottom-right h5{
-    font-size:14px;
+    font-size:15px;
     font-weight:600;
     color:black;
 }
 #data-bottom-right p{
-    font-size:12px;
+    font-size:13px;
     font-weight:400;
 }
 .example{
-    font-size:12px;
+    font-size:13px;
     width:80%;
     border:1px solid rgba(112,112,112,0.47);
     border-radius:4px;
