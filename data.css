@@ -138,6 +138,7 @@ justify-content: flex-end;
 }
 #data-bottom-left ul li{
     display:flex;
+    align-items: center;
 }
 #data-bottom-left ul li:hover{
    background-color:rgba(2,110,255,0.25);
