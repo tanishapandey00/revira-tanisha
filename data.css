@@ -146,7 +146,7 @@ justify-content: flex-end;
     font-weight:500;
     color:rgba(177,177,177,1);
 }
-#data-bottom-right span{
+#data-bottom-right h5{
     font-size:14px;
     font-weight:600;
     color:black;
