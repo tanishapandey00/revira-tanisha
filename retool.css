@@ -11,8 +11,7 @@ body{
     height:auto;
     font-family: 'Poppins', sans-serif;
 }
-
- .box{
+.box{
     height:auto;
     background-color:rgba(255, 255, 255, 1);
     border-radius:10px;
@@ -50,13 +49,7 @@ a:hover{
     justify-content: space-between;
     border-right: 0.6px solid rgba(136, 136, 136, 0.25);
 }
-#middle-left h4,#middle-left-2 h4{
-    font-size:17px; 
-}
-#middle-left p{
-    font-size:12px; 
-}
-#middle-left-2 ul li{
+/*#middle-left-2 ul li{
     font-size:13px;
     color:rgba(107, 107, 107, 1);
     font-weight:500;
@@ -70,25 +63,25 @@ a:hover{
     border-radius:12px;
     font-size:10px;
     margin-right:12px;
+}*/
+#middle-left-2 div:last-child a img{
+    width:30px;
 }
-#middle-left-2 i{
-color:gray;
+#middle-left-2 div:last-child a i{
+color:rgb(153, 153, 153);
 width:10px;
 }
 #middle-left-2 div:last-child a{
-    font-size:13px;
+    font-size:14px;
     margin-left:16px;
     padding:4px 10px;
-}
-#middle-left-2 div:last-child i{
-    color:blue;
 }
 #middle-left-2 div:last-child p{
     font-size:13px;
 }
 #middle-right{
     height:550px; 
-    overflow-y: scroll;
+    overflow-y:scroll;
 }
 #middle-right h3{
     font-size:13px;
@@ -101,6 +94,7 @@ width:10px;
     font-weight:500;
     margin:auto 0px;
 }
+/*Middle Right of Revires database option page called retool.html*/
 #middle-right .card{
     height:40px;
     display:flex;
@@ -113,21 +107,19 @@ width:10px;
   border-color:rgba(2, 121, 188, 1);
   background-color:rgba(52, 154, 249, 0.45);
 }
-
+/*img of Revires database option page called retool.html*/
 img{
     width:22px;
 }
 #bottom{
     height:50px !important;
     overflow-y:hidden;
-    border-top: 0.6px solid rgba(136, 136, 136, 0.5);
+    border-top: 0.6px solid rgba(136, 136, 136, 0.25);
 }
 #bottom-2{
     height:50px !important;
     overflow-y:hidden;
-    border-top: 0.6px solid rgba(136, 136, 136, 0.5);
-    border-left: 0.6px solid rgba(136, 136, 136, 0.5);
-    left: 35.05%;
+    border-top: 0.6px solid rgba(136, 136, 136, 0.25);
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -143,20 +135,13 @@ img{
     font-size:13px;
     justify-content: flex-end;
 }
-
-.form-group label{
-    margin: 12px 0px;
-    white-space: normal;
-}
 .form-control{
-    height:30px;
     width:70%;
-    margin: 5px 10px;
-    padding:5px 5px;
+    margin: 10px 0px ;
     font-size:13px;
     color:rgba(180, 180, 180, 1);
-    float:right;
 }
+/* commented part in retool2.html
 .form-check{
     font-size:12px;
     justify-content:center;
@@ -166,7 +151,7 @@ img{
     background:rgba(247, 231, 200, 1);
     border-radius:4px;
     display:flex;
-}
+}*/
 button{
     border-radius:3px;
     background-color:rgb(207, 207, 207);
@@ -196,27 +181,44 @@ button{
         border-right: 0;
     }
     .form-group{
-        font-size:12px;
+        font-size:14px;
+        flex-direction:column;
     }
-    .form-check{
+    .form-control{
+        width:90%;
+        font-size:13px;
+    }
+    /*.form-check{
         font-size:12px;
         justify-content:center;
         margin:10px auto;
         margin-left:5px; 
     }
+    
     .warning p{
         
         display: block !important;;
-    }
-    #bottom-2{
-        border-left: 0;
-        left:5%;
-    }
+    }*/
+   
     #bottom-2 div:last-child{
         display:flex;
         align-items: center;
     }
     #bottom-2 a{
         font-size:12.5px;
+    }
+}
+@media screen and  (max-width:500px){
+    #bottom-2 div:last-child{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #bottom-2{
+        height:auto !important;
+        flex-direction:column;
+    }
+    #bottom{
+       height:auto !important;
     }
 }
