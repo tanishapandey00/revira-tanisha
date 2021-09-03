@@ -89,14 +89,14 @@ width:10px;
     font-weight:500;
 }
 #middle-right p{
-    font-size:11px;
+    font-size:10px;
     color:rgba(107, 107, 107, 1);
     font-weight:500;
     margin:auto 0px;
 }
 /*Middle Right of Revires database option page called retool.html*/
 #middle-right .card{
-    height:50px;
+    height:40px;
     display:flex;
     flex-direction:row;
     align-items: center;
