@@ -96,7 +96,7 @@ width:10px;
 }
 /*Middle Right of Revires database option page called retool.html*/
 #middle-right .card{
-    height:40px;
+    height:auto;
     display:flex;
     flex-direction:row;
     align-items: center;
@@ -206,10 +206,6 @@ button{
     }
     #bottom-2 a{
         font-size:12.5px;
-    }
-
-    #middle-right p{
-        font-size:9px;
     }
 }
 @media screen and  (max-width:500px){
