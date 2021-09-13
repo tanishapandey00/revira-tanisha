@@ -108,62 +108,59 @@
                                     </div>
                                 </form>
                                 <div class="list-unstyled list-inline mt-3">
-                                    <a href="#" class="mx-lg-2 mx-md-3 mt-sm-2 mr-3 current">Params</a>
-                                    <a href="data_api2.html" class="mx-lg-4 mx-md-3 mt-sm-2  mr-3 ">Authorization</a>
+                                    <a href="data_api.html" class="mx-lg-2 mx-md-3 mt-sm-2 mr-3  ">Params</a>
+                                    <a href="#" class="mx-lg-4 mx-md-3 mt-sm-2  mr-3 current ">Authorization</a>
                                     <a href="data_api3.html" class="mx-lg-4 mx-md-3 mt-sm-2  mr-3  ml-xs-0">Headers</a>
                                     <a href="data_api4.html" class="mx-lg-4 mx-md-3 mt-sm-2  mr-3  ml-sm-0">Body</a>
                                     <!-- <a href="#" class="mx-md-3 ml-sm-0 mt-sm-2 mr-3 ">Settings</a>-->
                                 </div>
-                                <div class="list-content">
-                                    <h6 class="text-left text-capatilize mt-4">Query Params</h6>
-                                    <table class="table ">
-                                        <thead>
-                                            <tr>
-                                                <th class="table-border-right text-center">Key</th>
-                                                <th class="table-border-right text-center">Value</th>
-                                                <th class="text-center">Description</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="table-border-right">
-                                                    <label for="key_1" class="sr-only control-label">key_1</label>
-                                                    <input type="text" name="key_1" id="key_1"
-                                                        class="form-control m-0 p-0">
-                                                </td>
-                                                <td class="table-border-right">
-                                                    <label for="Value_1" class="sr-only control-label">Value_1</label>
-                                                    <input type="text" name="Value_1" id="Value_1"
-                                                        class="form-control m-0 p-0">
-                                                </td>
-                                                <td>
-                                                    <label for="Description_1"
-                                                        class="sr-only control-label">Description_1</label>
-                                                    <input type="text" name="Description_1" id="Description_1"
-                                                        class="form-control m-0 p-0">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="table-border-right">
-                                                    <label for="key_2" class="sr-only control-label">key_2</label>
-                                                    <input type="text" name="key_2" id="key_2"
-                                                        class="form-control m-0 p-0">
-                                                </td>
-                                                <td class="table-border-right">
-                                                    <label for="Value_2" class="sr-only control-label">Value_2</label>
-                                                    <input type="text" name="Value_2" id="Value_2"
-                                                        class="form-control m-0 p-0">
-                                                </td>
-                                                <td>
-                                                    <label for="Description_2"
-                                                        class="sr-only control-label">Description_2</label>
-                                                    <input type="text" name="Description_2" id="Description_2"
-                                                        class="form-control m-0 p-0">
-                                                </td>
-                                            </tr>
+                                <div class="autharization my-4">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-12 py-1 px-3">
+                                            <div class="ml-4 my-2">
+                                                <h5 class="text-left text-uppercase">TYPE</h5>
+                                                <div class="dropdown drop-icon">
+                                                    <a href="#" data-toggle="dropdown"
+                                                        class="px-3 py-2 btn btn-default">
+                                                        Basic Auth <i class="fas fa-chevron-down ml-2"></i></a>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
 
-                                        </tbody>
-                                    </table>
+                                                        <li><a href="#" class="dropdown-item">
+                                                                <p class="m-0">Basic Auth</p>
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="#" class="dropdown-item">
+                                                                <p class="m-0">Bearer Token</p>
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="#" class="dropdown-item">
+                                                                <p class="m-0">Inherit auth from parent</p>
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="#" class="dropdown-item">
+                                                                <p class="m-0">No Auth</p>
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="#" class="dropdown-item">
+                                                                <p class="m-0">oAuth 1.0</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="ml-4 mt-4 mb-5 pb-5">
+                                                <p>
+                                                    The authorization header will be automatically generated when you
+                                                    send the request.
+                                                    <a>Learn more about authorization
+                                                        <i class="fas fa-external-link-alt ml-1"></i></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8 col-12 py-1 text-center m-auto pl-2">
+                                            This request is not inheriting any authorization helper at the moment. Save it in a collection to use the parent's authorization helper.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!----------------------bottom---------------------------->
