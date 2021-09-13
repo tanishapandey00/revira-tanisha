@@ -189,8 +189,7 @@ color:rgba(65,64,64,1);
     width:auto;
     height:60%;
     border:0.6px solid rgba(136, 136, 136, 0.25);
-    border-radius:3px;
-    
+    border-radius:3px;   
 }
 .api_body .radio_tabs{
     display:flex;
@@ -352,5 +351,15 @@ justify-content: flex-end;
         border-right:none;
         border-bottom:0.6px solid rgba(136, 136, 136, 0.25);
         padding:0;
+    }
+    #middle{
+        height:700px;
+    }
+    #middle .body{  
+        height:60%;   
+    }
+    .api_body .radio_tabs{
+        display:flex;
+        flex-direction: column;
     }
 }
