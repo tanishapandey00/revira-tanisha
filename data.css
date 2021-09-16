@@ -78,25 +78,81 @@ color :#707070;
     font-size:13px;
     font-weight:450;
 }
-#middle .option-api  .dropdown-menu .dropdown-item p,
+/*#middle .option-api  .dropdown-menu .dropdown-item p,
 #middle .autharization .dropdown-menu .dropdown-item p{ 
     font-size:13px;
     font-weight:400;
     color:#6e6e6e;
    
-}
+}*/
 .get-drop{
     display:flex;
     align-items: center;
     background-color:rgba(226,226,226,0.54);
 }
-.get-drop .fa-chevron-down{
+.get-drop #Api_select{
+    background:transparent;
+    border:none;
+    font-size:14px;
+    font-weight:500;
+    color:#6e6e6e;
+    
+}
+.get-drop #Api_select ::after{
+    content:"";
+    border:none;
+}
+.get-drop select :focus{
+    border:none;
+    outline:none;
+}
+
+/*.get-drop .fa-chevron-down{
     color:rgba(112,112,112,0.9);
     border-left:1px solid rgba(112,112,112,0.9);
-}
+}*/
 #middle .form-group{
 justify-content: flex-start;
+align-items: center;
 }
+#middle .autharization{
+    height:100%;
+}
+#middle .autharization .form-group{
+    justify-content:space-between;
+    align-items: center;
+}
+#middle .autharization .form-control{
+    width:auto;
+}
+#middle .autharization a{
+    color:blue;
+}
+#middle .auth_1 .row .auth_1_a {
+    overflow-y: scroll;
+}
+#middle .auth_1 .row .auth_1_a p{
+    font-size:12px;
+}
+#middle .form-group #Username,
+#middle .form-group #Passwords,
+#middle .form-group #Token,
+#middle .form-group #Signature_Method,
+#middle .form-group #Consumer_key,
+#middle .form-group #Consumer_Secret,
+#middle .form-group #Access_Token,
+#middle .form-group #Token_Secret,
+#middle .form-group #Key,
+#middle .form-group #Value,
+#middle .form-group #Add_to_API_key{
+    width:70%;
+background:rgba(214, 214, 214, 0.315);
+color:#6e6e6e;
+}
+#middle .form-group #Signature_Method{
+    height:30px;
+}
+
 #middle .form-control{
 border:none;
 max-width:100%;
@@ -113,9 +169,20 @@ max-width:100%;
 font-size:12px;
 color:rgba(65,64,64,1);
 }
-#middle .list-unstyled .current {
-    border-bottom: 2px solid rgba(2,110,255,1);
+#middle .list-unstyled a:hover{
+    outline:none;
 }
+.nav-pills .active{
+    outline:none;
+    border-bottom: 2px solid rgba(2,110,255,1);
+    background:transparent;
+    border-radius:0px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color:transparent;
+} 
+
 .list-content h6{
     color:rgba(65,64,64,1);
 }
@@ -185,9 +252,9 @@ color:rgba(65,64,64,1);
     color:rgba(122, 122, 122);
 }
 /*Middle Body*/
-#middle .body{
+#middle #Body .body{
     width:auto;
-    height:60%;
+    height:180px;
     border:0.6px solid rgba(136, 136, 136, 0.25);
     border-radius:3px;   
 }
@@ -356,7 +423,7 @@ justify-content: flex-end;
         height:700px;
     }
     #middle .body{  
-        height:60%;   
+        height:70%;   
     }
     .api_body .radio_tabs{
         display:flex;

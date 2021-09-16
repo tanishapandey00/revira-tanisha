@@ -80,10 +80,10 @@
                                         <div class="get-drop px-lg-3  py-lg-2 px-2 py-2 m-0 ">
                                             <select name="" id="Api_select">
                                                 <option value="GET">GET</option>
-                                                <option value="POST" >POST</option>
+                                                <option value="POST">POST</option>
                                                 <option value="PUT">PUT</option>
                                             </select>
-                                           <!-- <span>GET</span> <span>
+                                            <!-- <span>GET</span> <span>
                                                 <div class="dropdown drop-icon">
                                                     <a href="#" data-toggle="dropdown"><i
                                                             class="fas fa-chevron-down ml-2 pl-3"></i></a>
@@ -113,25 +113,21 @@
                                     </div>
                                 </form>
                                 <ul class="list-unstyled list-inline nav nav-pills mt-3">
-                                    <li class="nav-item active"><a href="#Params"
-                                            class="nav-link "
+                                    <li class="nav-item "><a href="#Params" class="nav-link "
                                             data-toggle="pill">Params</a></li>
-                                    <li class="nav-item"> <a href="#Authorization"
-                                            class=" nav-link "
+                                    <li class="nav-item active"> <a href="#Authorization" class=" nav-link "
                                             data-toggle="pill">Authorization</a></li>
                                     <li class="nav-item">
-                                        <a href="#Headers" class="nav-link "
-                                            data-toggle="pill">Headers</a>
+                                        <a href="#Headers" class="nav-link " data-toggle="pill">Headers</a>
                                     </li>
-                                    <li class="nav-item"><a href="#Body"
-                                            class="nav-link "
-                                            data-toggle="pill">Body</a></li>
+                                    <li class="nav-item"><a href="#Body" class="nav-link " data-toggle="pill">Body</a>
+                                    </li>
 
                                 </ul>
 
                                 <div class="tab-content">
                                     <!---------Params------------->
-                                    <div class="list-content tab-pane fade in active" id="Params">
+                                    <div class="list-content tab-pane fade  " id="Params">
                                         <h6 class="text-left text-capatilize mt-4">Query Params</h6>
                                         <table class="table ">
                                             <thead>
@@ -185,15 +181,15 @@
                                         </table>
                                     </div>
                                     <!---------Authorization------------->
-                                    <div class="autharization my-4 tab-pane fade" id="Authorization">
+                                    <div class="autharization auth_1 my-4 tab-pane fade in active" id="Authorization">
                                         <div class="row">
-                                            <div class="col-lg-4 col-md-4 col-12 py-1 px-3">
+                                            <div class="col-lg-4 col-md-4 col-12 py-1 px-3 auth_1_a">
                                                 <div class="ml-4 my-2">
                                                     <h5 class="text-left text-uppercase">TYPE</h5>
                                                     <div class="dropdown drop-icon">
                                                         <a href="#" data-toggle="dropdown"
                                                             class="px-3 py-2 btn btn-default">
-                                                            Inherit auth from parent <i class="fas fa-chevron-down ml-2"></i></a>
+                                                            oAuth 1.0 <i class="fas fa-chevron-down ml-2"></i></a>
                                                         <ul class="dropdown-menu dropdown-menu-right">
 
                                                             <li><a href="data_api_2.html" class="dropdown-item">
@@ -223,7 +219,7 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="ml-4 mt-4 mb-5 pb-5">
+                                                <div class="ml-4 mt-4 mb-1 pb-1">
                                                     <p>
                                                         The authorization header will be automatically generated when
                                                         you
@@ -231,11 +227,75 @@
                                                         <a>Learn more about authorization
                                                             <i class="fas fa-external-link-alt ml-1"></i></a>
                                                     </p>
+
+
+                                                </div>
+                                                <div class="ml-4 my-2">
+                                                    <h5 class="text-left text-uppercase">Add authorization data to</h5>
+                                                    <div class="dropdown drop-icon">
+                                                        <a href="#" data-toggle="dropdown"
+                                                            class="px-3 py-2 btn btn-default">
+                                                            Request Body <i class="fas fa-chevron-down ml-2"></i></a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+
+                                                            <li><a href="data_api_2.html" class="dropdown-item">
+                                                                    <p class="m-0">Request Body</p>
+                                                                </a>
+                                                            </li>
+
+                                                            <li><a href="data_api_2_b.html" class="dropdown-item">
+                                                                    <p class="m-0">Request header</p>
+                                                                </a>
+                                                            </li>
+
+                                                        </ul>
+
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-8 col-md-8 col-12 py-1 text-center m-auto pl-2">
-                                                This request is not inheriting any authorization helper at the moment.
-                                                Save it in a collection to use the parent's authorization helper.
+                                            <div class="col-lg-8 col-md-8 col-12 py-1 text-center m-auto pl-2 ">
+                                                <form action="">
+                                                    
+                                                    <div class="form-group">
+                                                        <label for="Signature_Method"
+                                                            class="ml-sm-3 mr-auto text-left">Signature Method :
+                                                        </label>
+                                                        <select name="" id="Signature_Method"
+                                                            class="form-control p-0 m-auto">
+                                                            <option value="">HMAC-SHA1</option>
+                                                            <option value="">HMAC-SHA256</option>
+                                                            <option value="">HMAC-SHA512</option>
+                                                            <option value="">RSA-SHA1</option>
+                                                            <option value="">RSA-SHA256</option>
+                                                            <option value="">RSA-SHA512</option>
+                                                            <option value="">PLAIN TEXT</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Consumer_key"
+                                                            class="ml-sm-3 mr-auto pr-4 text-left">Consumer Key:
+                                                        </label>
+                                                        <input type="text" name="" id="Consumer_key" class="form-control m-auto" placeholder="Consumer Key">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Consumer_Secret"
+                                                            class="ml-sm-3 mr-auto pr-0 text-left">Consumer Secret:
+                                                        </label>
+                                                        <input type="text" name="" id="Consumer_Secret" class="form-control m-auto" placeholder="Consumer Secret">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Access_Token"
+                                                            class="ml-sm-3 mr-auto pr-4 text-left">Access Token:
+                                                        </label>
+                                                        <input type="text" name="" id="Access_Token" class="form-control m-auto" placeholder="Access Token">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Token_Secret"
+                                                            class="ml-sm-3 mr-auto pr-4 text-left">Token Secret:
+                                                        </label>
+                                                        <input type="text" name="" id="Token_Secret" class="form-control m-auto" placeholder="Token Secret">
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
